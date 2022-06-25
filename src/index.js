@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-import Treversal from "./forms/TransactionReversal";
+import Soa from "./forms/SoaDownload";
 
 import "./index.css";
 
-ReactDom.render(<Treversal />, document.getElementById("root"));
+ReactDom.render(<Soa />, document.getElementById("root"));

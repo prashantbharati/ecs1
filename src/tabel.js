@@ -7,6 +7,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { Typography } from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -45,11 +46,17 @@ const entries = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 export default function CustomizedTables({ fields }) {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table sx={{ height: 500 }} aria-label="customized table">
         <TableHead style={{ backgroundColor: "white" }}>
           <TableRow>
             {fields.map((field) => {
-              return <StyledTableCell>{field}</StyledTableCell>;
+              return (
+                <StyledTableCell>
+                  <Typography style={{ fontFamily: "Poppins", color: "grey" }}>
+                    {field}
+                  </Typography>
+                </StyledTableCell>
+              );
             })}
           </TableRow>
         </TableHead>

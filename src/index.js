@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-import Aumr from "./forms/Aumr";
+import Compreport from "./forms/Compreport";
 
 import "./index.css";
 
-ReactDom.render(<Aumr />, document.getElementById("root"));
+ReactDom.render(<Compreport />, document.getElementById("root"));

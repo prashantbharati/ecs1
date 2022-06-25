@@ -112,7 +112,7 @@ const fileimport = () => {
                 justifyContent: "center",
               }}
             >
-              <RangePicker showTime />
+              <RangePicker picker="week" />
             </div>
           </Grid>
         </Grid>

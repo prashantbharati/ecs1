@@ -8,6 +8,11 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRightToBracket,
+  faArrowsRotate,
+} from "@fortawesome/free-solid-svg-icons";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -82,8 +87,25 @@ export default function CustomizedTables({ fields }) {
                 <StyledTableCell component="th" scope="row">
                   ARN-1668
                 </StyledTableCell>{" "}
-                <StyledTableCell component="th" scope="row"></StyledTableCell>{" "}
-                <StyledTableCell component="th" scope="row"></StyledTableCell>
+                <StyledTableCell component="th" scope="row">
+                  {" "}
+                  {
+                    <FontAwesomeIcon
+                      className="txicon"
+                      style={{ color: "#006DFF" }}
+                      icon={faArrowRightToBracket}
+                    />
+                  }
+                </StyledTableCell>{" "}
+                <StyledTableCell component="th" scope="row">
+                  {
+                    <FontAwesomeIcon
+                      className="txicon"
+                      style={{ color: "#006DFF" }}
+                      icon={faArrowsRotate}
+                    />
+                  }
+                </StyledTableCell>
               </StyledTableRow>
             );
           })}

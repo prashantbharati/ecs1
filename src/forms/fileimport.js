@@ -7,6 +7,8 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 import "antd/es/date-picker/style/css";
 
@@ -86,6 +88,13 @@ const fileimport = () => {
               <Box style={{ width: "100%" }}>
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
+                    {
+                      <FontAwesomeIcon
+                        className="txicon"
+                        style={{ color: "#006DFF" }}
+                        icon={faFilter}
+                      />
+                    }
                     Add a Filter
                   </InputLabel>
                   <Select

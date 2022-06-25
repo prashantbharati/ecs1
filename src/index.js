@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-import Fileimport from "./forms/fileimport";
+import Aumr from "./forms/Aumr";
 
 import "./index.css";
 
-ReactDom.render(<Fileimport />, document.getElementById("root"));
+ReactDom.render(<Aumr />, document.getElementById("root"));

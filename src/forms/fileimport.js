@@ -7,6 +7,15 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+
+import addWeeks from "date-fns/addWeeks";
+import "antd/es/date-picker/style/css";
+
+import { LocalizationProvider } from "@mui/x-date-pickers-pro";
+import { AdapterDateFns } from "@mui/x-date-pickers-pro/AdapterDateFns";
+import { DateRangePicker } from "@mui/x-date-pickers-pro/DateRangePicker";
+import { DatePicker } from "antd";
+const { RangePicker } = DatePicker;
 const fields = [
   "Date",
   "File Name",
@@ -93,6 +102,21 @@ const fileimport = () => {
                   </Select>
                 </FormControl>
               </Box>
+            </div>
+          </Grid>
+
+          <Grid item xs={2}></Grid>
+
+          <Grid item xs={4}>
+            <div
+              style={{
+                height: "40vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <RangePicker showTime />
             </div>
           </Grid>
         </Grid>

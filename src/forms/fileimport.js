@@ -91,10 +91,11 @@ const fileimport = () => {
                     {
                       <FontAwesomeIcon
                         className="txicon"
-                        style={{ color: "#006DFF" }}
+                        style={{ height: "20px" }}
                         icon={faFilter}
                       />
                     }
+                    {"         "}
                     Add a Filter
                   </InputLabel>
                   <Select

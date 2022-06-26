@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-import Soa from "./forms/SoaDownload";
+import Cl from "./forms/campaignlog";
 
 import "./index.css";
 
-ReactDom.render(<Soa />, document.getElementById("root"));
+ReactDom.render(<Cl />, document.getElementById("root"));

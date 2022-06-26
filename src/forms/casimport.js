@@ -1,4 +1,4 @@
-import { Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 import Tabel from "../tabel.js";
 
@@ -8,7 +8,10 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpFromBracket,
+  faFilter,
+} from "@fortawesome/free-solid-svg-icons";
 
 const fields = [
   "Date",
@@ -105,6 +108,34 @@ const fileimport = () => {
                 }}
                 label="Enter Password"
               />
+            </div>
+          </Grid>
+
+          <Grid item xs={3}>
+            <div
+              style={{
+                height: "40vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ width: "50%", height: "20%", marginTop: "20px" }}
+              >
+                {
+                  <FontAwesomeIcon
+                    className="txicon"
+                    style={{ height: "20px", marginRight: "20px" }}
+                    icon={faArrowUpFromBracket}
+                  />
+                }
+                {"          "}
+                Upload
+              </Button>
             </div>
           </Grid>
         </Grid>

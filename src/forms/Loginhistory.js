@@ -21,7 +21,28 @@ const fileimport = () => {
     <>
       <div style={{ height: "40vh" }}>
         <Grid container>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={3}>
+            <div
+              style={{
+                height: "40vh",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  marginLeft: "12px",
+                  color: "#596278",
+                }}
+              >
+                Summary
+              </Typography>
+            </div>
+          </Grid>
 
           <Grid item xs={3}>
             <div

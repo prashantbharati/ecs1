@@ -10,7 +10,7 @@ import Select from "@mui/material/Select";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons";
 import "antd/es/date-picker/style/css";
-
+import "./styles.css";
 import { DatePicker } from "antd";
 const { RangePicker } = DatePicker;
 
@@ -35,12 +35,17 @@ const fileimport = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  marginLeft: "12px",
+                  margin: "0 12px 0 12px",
                   color: "#596278",
                 }}
               >
                 Summary
               </Typography>
+
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
             </div>
           </Grid>
 
